@@ -1,6 +1,7 @@
 
 .area {
-    fill: steelblue;
+    fill: transparent;
+    stroke: red;
     clip-path: url(#clip);
   }
   
