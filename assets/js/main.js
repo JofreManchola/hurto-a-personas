@@ -28,11 +28,22 @@ var zoom = d3.zoom()
     .extent([[0, 0], [width, height]])
     .on("zoom", zoomed);
 
-var area = d3.area()
-    .curve(d3.curveMonotoneX)
+// var area = d3.area()
+//     .curve(d3.curveMonotoneX)
+//     .x(function (d) { return x(d.Fecha); })
+//     .y0(height)
+//     .y1(function (d) { return y(d.Cantidad); });
+//     // .y1(function (d) { return y2(d.tend); });
+
+var areaTend = d3.line()
+    .curve(d3.curveCatmullRomOpen)
     .x(function (d) { return x(d.Fecha); })
-    .y0(height)
-    .y1(function (d) { return y(d.Cantidad); });
+    .y(function (d) { return y(d.tend); });
+
+var area = d3.line()
+    .curve(d3.curveCatmullRomOpen)
+    .x(function (d) { return x(d.Fecha); })
+    .y(function (d) { return y(d.Cantidad); });
 
 var area2 = d3.area()
     .curve(d3.curveMonotoneX)
@@ -71,6 +82,12 @@ d3.csv(urlData, type, function (error, data) {
         .attr("class", "area")
         .attr("d", area);
 
+    focus.append("path")
+        .datum(data)
+        .attr("class", "areaTend")
+        .attr("d", areaTend);
+
+
     focus.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + height + ")")
@@ -108,6 +125,7 @@ function brushed() {
     var s = d3.event.selection || x2.range();
     x.domain(s.map(x2.invert, x2));
     focus.select(".area").attr("d", area);
+    focus.select(".areaTend").attr("d", areaTend);
     focus.select(".axis--x").call(xAxis);
     svg.select(".zoom").call(zoom.transform, d3.zoomIdentity
         .scale(width / (s[1] - s[0]))
@@ -119,6 +137,7 @@ function zoomed() {
     var t = d3.event.transform;
     x.domain(t.rescaleX(x2).domain());
     focus.select(".area").attr("d", area);
+    focus.select(".areaTend").attr("d", areaTend);
     focus.select(".axis--x").call(xAxis);
     context.select(".brush").call(brush.move, x.range().map(t.invertX, t));
 }

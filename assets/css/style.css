@@ -4,6 +4,12 @@
     stroke: red;
     clip-path: url(#clip);
   }
+
+.areaTend {
+    fill: transparent;
+    stroke: blue;
+    clip-path: url(#clip);
+  }
   
   .zoom {
     cursor: move;
