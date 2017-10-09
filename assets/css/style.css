@@ -3,17 +3,24 @@
     fill: transparent;
     stroke: red;
     clip-path: url(#clip);
-  }
+}
 
 .areaTend {
     fill: transparent;
     stroke: blue;
     clip-path: url(#clip);
-  }
-  
-  .zoom {
+}
+
+.zoom {
     cursor: move;
     fill: none;
     pointer-events: all;
-  }
-  
+}
+
+.cursiva{
+    color: red;
+    font-style: oblique;
+    background-color: #C0C0C0;
+    border: solid 1px blue;
+    padding: 0px 10px;
+}
