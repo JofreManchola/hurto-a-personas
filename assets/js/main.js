@@ -45,11 +45,11 @@ var area = d3.line()
     .x(function (d) { return x(d.Fecha); })
     .y(function (d) { return y(d.Cantidad); });
 
-var area2 = d3.area()
+var area2 = d3.line()
     .curve(d3.curveMonotoneX)
     .x(function (d) { return x2(d.Fecha); })
-    .y0(height2)
-    .y1(function (d) { return y2(d.Cantidad); });
+    // .y0(height2)
+    .y(function (d) { return y2(d.Cantidad); });
 
 svg.append("defs").append("clipPath")
     .attr("id", "clip")
