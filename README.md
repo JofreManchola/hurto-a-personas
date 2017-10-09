@@ -3,7 +3,7 @@
 
 ### Análisis hurto a personas
 
-He decidido análizar el comportamiento del  ```delito el hurto a personas``` en Bogotá - Colombia durante los últimos años, tratando de identificar si existe o no estacionalidad, buscando su línea de tendencia, del análisis podemos concluir:
+He decidido análizar el comportamiento del  ```delito el hurto a personas``` en Bogotá-Colombia durante los últimos años, tratando de identificar si existe o no estacionalidad, buscando su línea de tendencia, del análisis podemos concluir:
 
 - En navidad disminuye la cantidad de hurtos.
 - El promedio de hurtos ha aumentado en 2016 y 2017 en comparación con años anteriores.
