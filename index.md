@@ -32,3 +32,8 @@ El análisis se realizó sobre el dataset de *Delitos de hurto a personas* entre
 La visualización construida está disponible en https://jofremanchola.github.io/hurto-a-personas/.
 
 Por otro lado, si está interesado en el procesamiento del dataset está disponible [aquí](https://jofremanchola.github.io/hurto-a-personas/Analisis+datos+hurto+a+personas.html).
+
+
+### Agradecimientos a:
+- [Raul E. Lopez Briega. Series de tiempo con Python](https://relopezbriega.github.io/blog/2016/09/26/series-de-tiempo-con-python/)
+- [Mike Bostock’s Block Brush & Zoom](https://bl.ocks.org/mbostock/34f08d5e11952a80609169b7917d4172)
