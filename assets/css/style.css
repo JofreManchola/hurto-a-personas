@@ -1,13 +1,15 @@
 
 .area {
     fill: transparent;
-    stroke: red;
+    /* stroke: red; */
+    stroke: #1b9e77;
     clip-path: url(#clip);
 }
 
 .areaTend {
     fill: transparent;
-    stroke: blue;
+    /* stroke: blue; */
+    stroke: #d95f02;
     clip-path: url(#clip);
 }
 
@@ -23,4 +25,25 @@
     background-color: #C0C0C0;
     border: solid 1px blue;
     padding: 0px 10px;
+}
+
+.tableDataset{
+
+}
+
+.enlaces {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #D0D0D0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.enlaces img {
+    vertical-align: middle;
 }
