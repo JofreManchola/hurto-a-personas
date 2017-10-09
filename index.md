@@ -29,5 +29,5 @@ El análisis se realizó sobre el dataset de *Delitos de hurto a personas* entre
 | 2016 	| https://www.datos.gov.co/Seguridad-y-Defensa/Hurto-Personas-2016/fr4m-6x3a     	|
 | 2017 	| https://www.datos.gov.co/Seguridad-y-Defensa/Hurto-a-personas-2017/87nm-zeev   	|
 
-La visualización construida está disponible en [https://jofremanchola.github.io/hurto-a-personas/]{:target="_blank"}.
-
+La visualización construida está disponible en https://jofremanchola.github.io/hurto-a-personas/.
+Por otro lado, si está interesado en el procesamiento del dataset está disponible [aquí](https://jofremanchola.github.io/hurto-a-personas/Analisis+datos+hurto+a+personas.html).
